@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Read and Check"></div>
+
+			<!-- Content -->
+			<div class="content">
+				<div class="title_wrap">
+					<div class="subtitle" data-bullet="creative">
+						<p class="txt">자신의 특별한 행사에 친구를 초대하는 대화를 해 봅시다.</p>
+					</div>
+				</div>
+
+				<div class="bubble_wrap animate_bubble animateBubble_light">
+					<div class="bubble_box tail bottom left c1" data-media="17_s_1">
+						<p class="bubble_txt">
+							Hello, I’m Jiyun.
+						</p>
+					</div>
+
+					<div id="rusultMp3_01" class="bubble_box tail bottom left c1" data-media="17_s_2">
+						<p class="bubble_txt">
+							I’m in the sixth grade.
+						</p>
+					</div>
+
+					<div class="bubble_box tail bottom left c1" data-media="17_s_3">
+						<p class="bubble_txt">
+							I’m in the cooking club.
+						</p>
+					</div>
+
+					<div class="bubble_box tail bottom left c1" data-media="17_s_4">
+						<p class="bubble_txt">
+							I like to cook.
+						</p>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<div class="ibtn ibtn btnScript ex btnAudioBubble" title="예시 대화" data-target="animateBubble_light">음성듣기</div>
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnScript btnPopup" title="대본 보기" data-popup="pop_light_script"></div>
+				</div>
+
+				<!-- Left Side Btn -->
+				<div class="aside_left">
+					<div class="al_wrap">
+						<div class="al_btn btnTab bullet_a" data-page="e6_l05_72_02_01.html">A</div>
+						<div class="al_btn btnTab bullet_b" data-page="e6_l05_72_02_02.html">B</div>
+						<div class="al_btn btnTab bullet_creative on" data-page="e6_l05_72_02_03.html">창의</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : pop_light_script - 창의 활동 대본 보기 -->
+			<div class="popWrap">
+				<div id="pop_light_script" class="pop_container" data-type="Full" data-layout="roleScript">
+					<div class="pop_title">
+						<p class="txt">대본 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="sync_light_script" data-media="17_s_1_a" data-compo="audio subtitle btnLanguage"></div>
+						<div class="btnPrint"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_sync_light_script">
+						<div class="script_role" data-layout="min">
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">A:</span>I have a snack party.</div>
+								<div class="tKor">나는 과자 파티를 해.</div>
+							</div>
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">B:</span>When is your snack party?</div>
+								<div class="tKor">네 과자 파티는 언제니?</div>
+							</div>
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">A:</span>It's on June 15th. Can you come to my snacks party?</div>
+								<div class="tKor">6월 15일이야. 내 과자 파티에 올 수 있니?</div>
+							</div>
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">B:</span>Sure, I can.</div>
+								<div class="tKor">좋아, 난 갈 수 있어.</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+        <!-- Navigation -->
+        <div id="nav">
+			<div class="side_next_btn popupSlideWrap">
+				<div class="side_prev prev"></div>
+				<div class="side_next next"></div>
+			</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.play_box{text-align: center;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Play Together 2"></div>
+
+			<!-- Content -->
+			<div class="content">
+				<div class="title_wrap">
+					<div class="corner">
+						<p>카드 내려놓기</p>
+					</div>
+					<div class="guide_btn_wrap">
+						<div class="ibtn btnGuide btnPopup" data-popup="popUp_01">활동 방법</div>
+						<div class="ibtn btnMaterial download" data-url="">활동 자료</div>
+					</div>
+				</div>
+
+				<div class="play_box">
+					<img src="images/e6_l05_69_02_01.png" style="margin-top: -20px;" />
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+				<div id="popUp_01" class="pop_container" data-type="Full" data-layout="guide">
+					<div class="pop_title">
+						<p class="txt">활동 방법</p>
+					</div>
+					<div class="pop_content">
+            <div class="scrollContent">
+              <div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+                <div class="manual_box">
+                  <ul class="pop_num_list" data-layout="blue">
+                    <li>
+                      4명이 한 모둠을 이루고, 날짜 카드를 6장씩 나누어 가져요. 남은 카드는 뒷면이 보이도록 책상에 쌓아 놓아요. 선생님은 모둠별로 행사 주사위를 하나씩 나누어 줘요.
+                    </li>
+                    <li>
+                      모둠원들은 가위바위보로 순서를 정하고, 첫 번째 학생(S1)이 주사위를 던지면 나머지 모둠원들은 나온 칸의 그림에 맞게 “When is your piano concert?”와 같이 물어요.
+                    </li>
+                    <li>
+                      S1은 자신의 날짜 카드 중 한 장을 내려놓으며 “It’s on May 19th. Can you come to my piano concert?”와 같이 물어요.
+                    </li>
+                    <li>
+                      S1과 같은 날짜 카드를 가진 학생은 “Sure, I can.”이라고 말하며 해당 카드를 내려놓아요. 같은 날짜 카드가 없는 학생은 “Sorry, I can’t.”라고 말하며 카드 더미에서 카드를 한 장 가져가요.
+                    </li>
+                    <li>
+                      같은 방법으로 활동을 계속하여 가장 먼저 카드를 모두 내려놓은 학생이 이겨요.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>

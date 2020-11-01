@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.scrollContent{height: 520px;}
+
+		.write_box{font-size:44px; line-height: 44px;}
+		.write_box .quiz_essay{position:relative; margin-top: 100px; padding-left:50px; }
+
+		.write_box .inner_wrap:after{content: ''; display: block; clear: both;}
+		.write_box .inner_wrap > li{float: left;}
+		.write_box .inner_wrap > li:nth-child(1){width: 450px;}
+		.write_box .inner_wrap > li:nth-child(2){width: calc(100% - 450px);}
+
+		.write_box .img_box{position: relative; display: table-cell; vertical-align: middle;}
+		.write_box .icon[data-icon='q_num_1'] + .inner_wrap .img_box{height: 310px;}
+		.write_box .icon[data-icon='q_num_2'] + .inner_wrap .img_box{height: 520px;}
+		.write_box .img_box img{width:100%;}
+		.write_box .img_box .txt{position:absolute; display:inline-block;}
+
+		.write_box .icon{position:absolute; display:inline-block; left:50px; top:20px;}
+		.write_box .icon[data-icon='q_num_1'] + .inner_wrap .img_box .txt{top:26px; left:187px;}
+		.write_box .icon[data-icon='q_num_2'] + .inner_wrap .img_box .txt{top:108px; left:85px;}
+
+		.write_box .input_set{position: relative; padding-left: 50px; margin-bottom: 100px;}
+		.write_box .input_set .txt{position: absolute; left: 0;}
+
+		.write_box .input_set .input_wrap{width:500px;}
+		.write_box .input_set .guide_txt{position:absolute; display:inline-block; left:50px; bottom:-40px; width: 500px; font-size:32px; line-height: 32px; text-align:center;}
+		.write_box .mp_text{display:inline;}
+
+		.audio_wrap{position: absolute; top: 13px; left: 440px;}
+
+		.content .inner_btn_wrap{top: -35px;}
+
+		/* btn_each */
+		.btn_each{top:15px; right: -50px;}
+
+		/* popup */
+		.script_role .icon.txt{font-size: 44px;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Write It"></div>
+
+			<!-- Content -->
+			<div class="content quizContent" data-chapter="write_it">
+				<div class="title_wrap">
+					<div class="subtitle quizMarking" data-bullet="B" data-marking="Quiz_B">
+						<p class="txt">
+							낱말을 바르게 배열하여 대화를 완성해 봅시다.
+						</p>
+					</div>
+				</div>
+
+				<div class="write_box">
+					<div class="scrollContent">
+						<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+							<assessmentItem class="quizType quiz_except" data-qid="Quiz_B" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-marking="true">
+								<itemBody>
+									<div class="quiz_essay quizEssay">
+										<div class="icon" data-icon="q_num_1"></div>
+										<ul class="inner_wrap">
+											<li class="col">
+												<div class="img_box">
+													<img src="images/e06_015_02_01.png" alt="" />
+													<p class="txt">3학년</p>
+												</div>
+											</li>
+											<li class="col">
+												<div class="audio_wrap">
+													<div class="ibtn btnAudio answerAudio mp_audio" id="syncA_1"  title="음성 듣기" data-media="15_o_6_f" data-compo="btnonly subtitle">음성 듣기</div>
+												</div>
+												<div id="subtitle_syncA_1">
+													<div class="input_set caption">
+														<div class="txt">A:</div>
+														<div class="tEng disabled">
+															<div class="input_wrap">
+																<input id="saveData_Q_B_1" type="text" class="essayWrite input_txt noSound tal" title="입력" />
+																<correctResponse class="answerCorrect essayAnswer answer_txt">What grade are you in</correctResponse>
+															</div>?
+														</div>
+														<span class="guide_txt">(grade / in / you / What / are)</span>
+														<div class="btn_each n1" title="정답">정답</div>
+													</div>
+													<div class="input_set caption">
+														<div class="txt">B:</div>
+														<div class="tEng disabled">
+															<div class="input_wrap">
+																<input id="saveData_Q_B_2" type="text" class="essayWrite input_txt noSound tal" title="입력" />
+																<correctResponse class="answerCorrect essayAnswer answer_txt">I am in the third grade</correctResponse>
+															</div>.
+														</div>
+														<span class="guide_txt">(third / am / grade / the / I / in)</span>
+														<div class="btn_each n2" title="정답">정답</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+									<div class="quiz_essay quizEssay">
+										<div class="icon" data-icon="q_num_2"></div>
+										<ul class="inner_wrap">
+											<li class="col">
+												<div class="img_box">
+													<img src="images/e06_015_02_02.png" alt="" />
+													<p class="txt">6학년</p>
+												</div>
+											</li>
+											<li class="col">
+												<div class="audio_wrap">
+													<div class="ibtn btnAudio answerAudio mp_audio" id="syncA_2" title="음성 듣기" data-media="15_o_8_f" data-compo="btnonly subtitle">음성 듣기</div>
+												</div>
+												<div id="subtitle_syncA_2">
+													<div class="input_set caption">
+														<div class="txt">A:</div>
+														<div class="tEng disabled">
+															<div class="input_wrap">
+																<input id="saveData_Q_B_3" type="text" class="essayWrite input_txt noSound tal" title="입력" />
+																<correctResponse class="answerCorrect essayAnswer answer_txt">I am in the sixth grade</correctResponse>
+															</div>.
+														</div>
+														<span class="guide_txt">(in / am / sixth / I / the / grade)</span>
+														<div class="btn_each n3" title="정답">정답</div>
+													</div>
+													<div class="input_set caption mb50">
+														<div class="tEng">I like to dance.</div>
+													</div>
+													<div class="input_set caption">
+														<div class="txt">B:</div>
+														<div class="tEng disabled">
+															<div class="input_wrap">
+																<input id="saveData_Q_B_4" type="text" class="essayWrite input_txt noSound tal" title="입력" />
+																<correctResponse class="answerCorrect essayAnswer answer_txt">Can you join us</correctResponse>
+															</div>?
+														</div>
+														<span class="guide_txt">(you / us / Can / join)</span>
+														<div class="btn_each n4" title="정답">정답</div>
+													</div>
+													<div class="input_set caption mb0">
+														<div class="txt">A:</div>
+														<div class="tEng">All right.</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</itemBody>
+							</assessmentItem>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_wrap">
+					<div class="feedMessage feedMotion quiz">문제를 먼저 풀어 보세요.</div>
+					<div class="ibtn btnCheck" title="정답 확인" data-target="Quiz_B">정답 확인</div>
+					<div class="ibtn btnReplay" title="다시 하기" data-target="Quiz_B">다시 하기</div>
+					<div class="ibtn btnAnswer" title="전체 정답" data-target="Quiz_B">전체 정답</div>
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnTran btnPopup" title="해석 보기" data-popup="pop_script_01">해석 보기</div>
+				</div>
+
+				<!-- Left Side Btn -->
+				<div class="aside_left">
+					<div class="al_wrap">
+						<div class="al_btn btnTab bullet_a" data-page="e6_l05_71_01_01.html">A</div>
+						<div class="al_btn btnTab bullet_b on" data-page="e6_l05_71_01_02.html">B</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : pop_script_02 - 해석 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_01" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_2" data-media="15_o_6_a" data-compo="audio subtitle scroll"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_2">
+						<div class="scrollContent">
+							<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+								<div class="script_role script_tran" data-layout="min">
+									<ul class="pop_num_list" data-layout="gray_num">
+										<li>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">A:</span>What grade are you in?</div>
+												<div class="tKor">너는 몇 학년이니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">B:</span>I am in the third grade.</div>
+												<div class="tKor">나는 3학년이야.</div>
+											</div>
+										</li>
+										<li>
+											<div class="multi row">
+												<div class="caption inline">
+													<div class="tEng"><span class="icon txt">A:</span>I am in the sixth grade.</div>
+												</div>
+												<div class="caption inline">
+													<div class="tEng">I like to dance.</div>
+													<div class="tKor">나는 6학년이야. 나는 춤추는 것을 좋아해.</div>
+												</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">B:</span>Can you join us?</div>
+												<div class="tKor">우리와 함께 할래?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">A:</span>All right.</div>
+												<div class="tKor">좋아.</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav">
+			<div class="side_next_btn popupSlideWrap">
+				<div class="side_prev prev"></div>
+				<div class="side_next next"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

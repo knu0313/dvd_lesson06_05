@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Look and Listen"></div>
+
+			<!-- Content -->
+			<div class="content quizContent" data-chapter="look_quiz">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab" data-page="e6_l05_67_01_01.html">듣고 말하기</div>
+						<div class="al_btn btnTab on" data-page="e6_l05_67_01_02.html">퀴즈</div>
+						<div class="al_btn btnTab" data-page="e6_l05_67_01_03.html">역할놀이</div>
+					</div>
+				</div>
+
+				<assessmentItem class="quizType" data-qid="Quiz_TQ_A" data-question-type="essayQuiz" data-response-type="fillInTheBlank">
+					<itemBody>
+						<div class="question_box">
+							<div class="question_txt" data-num="1">
+								준호의 생일은 언제인가요?
+							</div>
+							<div class="quiz_essay quizEssay">
+								<div class="input_wrap">
+									<input id="saveData_TQ_A_1" type="text" class="essayWrite input_txt noSound" title="입력" readonly />
+									<correctResponse class="answerCorrect essayAnswer answer_txt">3월 2일요.</correctResponse>
+								</div>
+								<div class="btn_each n1" title="정답">정답</div>
+							</div>
+						</div>
+
+						<div class="question_box">
+							<div class="question_txt" data-num="2">
+								Harry와 하나의 생일 파티에 누가 참석하나요?
+							</div>
+							<div class="quiz_essay quizEssay">
+								<div class="input_wrap">
+									<input id="saveData_TQ_A_2" type="text" class="essayWrite input_txt noSound" title="입력" readonly />
+									<correctResponse class="answerCorrect essayAnswer answer_txt">준호와 Lucy요.</correctResponse>
+								</div>
+								<div class="btn_each n2" title="정답">정답</div>
+							</div>
+						</div>
+					</itemBody>
+				</assessmentItem>
+
+				<div class="btn_wrap">
+					<div class="ibtn btnAnswer" title="전체 정답" data-target="Quiz_TQ_A">전체 정답</div>
+					<div class="ibtn btnReplay hidden" title="감추기" data-target="Quiz_TQ_A">감추기</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+			</div>
+		</div>
+
+        <!-- Navigation -->
+        <div id="nav"></div>
+    </div>
+</body>
+
+</html>

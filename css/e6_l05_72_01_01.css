@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* page - e6_l01_16_01_01 */
+/* .word_quiz  */
+.content[data-chapter='r_before'] .word_quiz .word_content{height: 490px; padding: 20px 80px;}
+
+.word_quiz .draw_leave{position:absolute; top:60px; left:0px; display:inline-block; font-size:40px; font-weight:700; text-align:center;}
+.word_quiz .draw_leave .lineDraw{}
+.word_quiz .draw_leave .lineDraw.c1.done{color:#00ae81;}
+.word_quiz .draw_leave .lineDraw.c2.done{color:#f6ab00;}
+.word_quiz .draw_leave .lineDraw.c3.done{color:#a005f0;}
+.word_quiz .draw_leave .lineDraw.c4.done{color:#d11855;}
+
+.word_quiz .draw_canvas{width:100%; height:250px; margin-top:20px;}
+.word_quiz .draw_canvas .startWrap > li{top:1px; height:40px; border-radius:0px;}
+.word_quiz .draw_canvas .startWrap > li:nth-child(1){left:198px; width:120px; background:none;}
+.word_quiz .draw_canvas .startWrap > li:nth-child(2){left:376px; width:108px; background:none;}
+.word_quiz .draw_canvas .startWrap > li:nth-child(3){left:517px; width:53px; background:none;}
+.word_quiz .draw_canvas .startWrap > li:nth-child(4){left:651px; width:90px; background:none;}
+.word_quiz .draw_canvas .startWrap .dot:after{display:none;}
+
+.word_quiz .draw_canvas .startWrap > li.c1.done{border-bottom:5px solid #00ae81;}
+.word_quiz .draw_canvas .startWrap > li.c2.done{border-bottom:5px solid #f6ab00;}
+.word_quiz .draw_canvas .startWrap > li.c3.done{border-bottom:5px solid #a005f0;}
+.word_quiz .draw_canvas .startWrap > li.c4.done{border-bottom:5px solid #d11855;}
+
+.word_quiz .draw_canvas .goalWrap > li{}
+.word_quiz .draw_canvas .goalWrap > li:nth-child(1){left:98px;}
+.word_quiz .draw_canvas .goalWrap > li:nth-child(2){left:333px;}
+.word_quiz .draw_canvas .goalWrap > li:nth-child(3){left:569px;}
+.word_quiz .draw_canvas .goalWrap > li:nth-child(4){left:810px;}
+
+.word_quiz .draw_arrival{width:100%;}
+.word_quiz .draw_arrival:after{content:''; display:block; clear:both;}
+.word_quiz .draw_arrival > li{
+    width:calc(100% / 4 - 12px);
+    height: 140px;
+    margin-right:16px;
+    background-color:#fff;
+    border-radius:20px;
+    border:2px solid #dadada;
+    box-shadow: 0 4px 0px rgba(218, 218, 218, 0.5);
+}
+.word_quiz .draw_arrival > li:last-child{margin-right:0px;}
+.word_quiz .draw_arrival > li.colorOn{border:2px solid #33aaff;}
+.word_quiz .draw_arrival > li > img{height: 100%;}
+
+#slideBtnWrap{display: none;}
+
+.svgContainer{position: absolute;}

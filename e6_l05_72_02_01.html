@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.write_box:after{content: ''; display: block; clear: both;}
+		.write_box .quiz_essay{position: relative; display: inline-block; float: left; width: calc(100% / 3 - 1px); height: calc(100% / 2 - 1px); text-align: center; margin-bottom: 40px;		}
+		.img_box > img{height: 130px;}
+		.btn_each{top: 145px; right: 110px;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Read and Check"></div>
+
+			<!-- Content -->
+			<div class="content quizContent">
+				<div class="title_wrap">
+					<div class="subtitle quizMarking" data-bullet="A" data-marking="Quiz_A">
+						<p class="txt">글의 내용과 일치하면 <span class="icon_o">O</span>표, 일치하지 않으면 <span class="icon_x">X</span>표를 해 봅시다.</p>
+					</div>
+				</div>
+
+				<div class="write_box">
+					<assessmentItem class="quizType" data-qid="Quiz_A" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-marking="true">
+						<itemBody>
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_01.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_1" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">J</correctResponse>
+								</div>
+								<div class="btn_each n1" title="정답">정답</div>
+							</div>
+
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_02.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_2" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">J</correctResponse>
+								</div>
+								<div class="btn_each n2" title="정답">정답</div>
+							</div>
+
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_03.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_3" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">S</correctResponse>
+								</div>
+								<div class="btn_each n3" title="정답">정답</div>
+							</div>
+
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_04.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_4" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">S</correctResponse>
+								</div>
+								<div class="btn_each n4" title="정답">정답</div>
+							</div>
+
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_05.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_5" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">S</correctResponse>
+								</div>
+								<div class="btn_each n5" title="정답">정답</div>
+							</div>
+
+							<div class="quiz_essay quizEssay">
+								<div class="img_box">
+									<img src="images/e06_016_05_06.png" />
+								</div>
+								<div class="input_wrap">
+									<input id="saveData_Q_A_6" type="text" class="essayWrite input_txt noSound" title="입력" data-layout="box" maxlength="1"/>
+									<correctResponse class="answerCorrect essayAnswer answer_txt">J</correctResponse>
+								</div>
+								<div class="btn_each n6" title="정답">정답</div>
+							</div>
+						</itemBody>
+					</assessmentItem>
+				</div>
+
+				<div class="btn_wrap">
+					<div class="feedMessage feedMotion quiz">문제를 먼저 풀어 보세요.</div>
+					<div class="ibtn btnCheck" title="정답 확인" data-target="Quiz_A">정답 확인</div>
+					<div class="ibtn btnReplay" title="다시 하기" data-target="Quiz_A">다시 하기</div>
+					<div class="ibtn btnAnswer" title="전체 정답" data-target="Quiz_A">전체 정답</div>
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnTran btnPopup" title="해석 보기" data-popup="pop_full_script">해석 보기</div>
+				</div>
+
+				<!-- Left Side Btn -->
+				<div class="aside_left">
+					<div class="al_wrap">
+						<div class="al_btn btnTab bullet_a on" data-page="e6_l05_72_02_01.html">A</div>
+						<div class="al_btn btnTab bullet_b" data-page="e6_l05_72_02_02.html">B</div>
+						<div class="al_btn btnTab bullet_creative" data-page="e6_l05_72_02_03.html">창의</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : 해석 보기 -->
+			<div class="popWrap">
+				<div id="pop_full_script" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="" data-compo="audio subtitle scroll"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+							<div class="script_role script_tran">
+								<ul class="pop_num_list" data-layout="gray_num">
+									<li>
+										<div class="caption row">
+											<div class="tEng">The Movie Night is on July 10th.</div>
+											<div class="tKor">'영화의 밤'은 7월 10일이다.</div>
+										</div>
+									</li>
+									<li>
+										<div class="caption row">
+											<div class="tEng">Genie has a magic show on June 2nd.</div>
+											<div class="tKor">Genie는 6월 2일에 마술 쇼를 한다.</div>
+										</div>
+									</li>
+									<li>
+										<div class="caption row">
+											<div class="tEng">Bill can come to the magic show.</div>
+											<div class="tKor">Bill은 마술 쇼에 올 수 있다.</div>
+										</div>
+									</li>
+									<li>
+										<div class="caption row">
+											<div class="tEng">Emma's birthday is on July 2nd.</div>
+											<div class="tKor">Emma의 생일은 7월 2일이다.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+        <!-- Navigation -->
+        <div id="nav">
+			<div class="side_next_btn popupSlideWrap">
+				<div class="side_prev prev"></div>
+				<div class="side_next next"></div>
+			</div>
+        </div>
+    </div>
+</body>
+
+</html>

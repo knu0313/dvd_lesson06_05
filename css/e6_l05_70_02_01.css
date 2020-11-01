@@ -1,0 +1,108 @@
+.draw_set {
+  position: relative;
+  width: 1174px;
+  height: 450px;
+  margin: 50px auto 0;
+  background: url(../images/e6_l05_70_02_01.png) no-repeat center;
+  background-size: contain;
+}
+.svgContainer {
+  position: absolute;
+  width: 184px;
+  height: 448px;
+  top: 0;
+  left: 343px;
+}
+.draw_canvas {
+  position: absolute;
+  width: 184px;
+  height: 448px;
+  top: 0;
+  left: 343px;
+}
+.draw_set[data-layout='hori'] .startWrap > li {
+  left: 6px;
+}
+.dot {
+  cursor: pointer;
+}
+.startWrap .dot:nth-child(1) {
+  top: 38px;
+}
+.startWrap .dot:nth-child(2) {
+  top: 194px;
+}
+.startWrap .dot:nth-child(3) {
+  top: 356px;
+}
+.draw_set[data-layout='hori'] .goalWrap > li {
+  left: 142px;
+}
+.goalWrap .dot:nth-child(1) {
+  top: 38px;
+}
+.goalWrap .dot:nth-child(2) {
+  top: 194px;
+}
+.goalWrap .dot:nth-child(3) {
+  top: 356px;
+}
+.draw_set .draw_leave {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 320px;
+}
+.draw_set .draw_leave > li .icon {
+  vertical-align: top;
+  margin: 3px 10px 0 0;
+}
+.draw_set .draw_leave > li {
+  text-align: left;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.draw_set .draw_leave > li:nth-child(1) .btn_each {
+  right: -20px;
+  top: 10px;
+}
+.draw_set .draw_leave > li:nth-child(2) {
+  margin-top: 60px;
+}
+.draw_set .draw_leave > li:nth-child(2) .btn_each {
+  right: -30px;
+  top: 10px;
+}
+.draw_set .draw_leave > li:nth-child(3) {
+  margin-top: 56px;
+}
+.draw_set .draw_leave > li:nth-child(3) .btn_each {
+  right: -30px;
+  top: 10px;
+}
+
+.draw_set .draw_arrival {
+  position: absolute;
+  left: 534px;
+  top: 12px;
+  width: 320px;
+}
+.draw_set .draw_arrival > li .icon {
+  vertical-align: top;
+  margin: 3px 10px 0 0;
+}
+.draw_set .draw_arrival > li {
+  text-align: left;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.draw_set .draw_arrival > li:nth-child(2) {
+  margin-top: 56px;
+}
+.draw_set .draw_arrival > li:nth-child(3) {
+  margin-top: 54px;
+}

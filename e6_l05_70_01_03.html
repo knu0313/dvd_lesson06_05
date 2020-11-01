@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		#container .content{
+			background:url('./images/e6_l05_70_01_03.png') no-repeat;
+			background-size: 405px auto;
+    	background-position: 787px 109px;
+		}
+
+		/* popup */
+		.pop_content .pop_num_list > li:nth-child(1) .caption:nth-child(2){margin-top: 40px;}
+		.pop_content .pop_num_list > li:nth-child(2) .caption:nth-child(1){margin-top: 40px;}
+
+
+		.color.c1 {color:#cd0101;}
+		.color.c2 {color:#359b02;}
+		.color.c3 {color:#9b35ce;}
+		.color.c4 {color:#cd6701;}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Sing and Read"></div>
+
+			<!-- Content -->
+			<div class="content" data-chapter="snr">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab" data-page="e6_l05_70_01_01.html">노래 부르기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_70_01_02.html">낱말 읽기</div>
+						<div class="al_btn btnTab on" data-page="e6_l05_70_01_03.html">노랫말 읽기</div>
+					</div>
+				</div>
+
+				<div class="title_wrap">
+					<div class="subtitle">
+						<p class="txt">노랫말을 강세, 리듬, 억양에 맞게 소리 내어 읽어 봅시다.</p>
+					</div>
+				</div>
+
+				<!--  Audio Player Start  -->
+				<div class="mp3_control">
+					<div class="mp_audio" id="syncA_1" data-media="" data-compo="audio subtitle scroll" title="노랫말 읽기"></div>
+				</div>
+				<!--  Audio Player End  -->
+
+				<div id="subtitle_syncA_1" class="inner_wrap">
+					<div class="scrollContent">
+						<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+							<div class="reading_container">
+								<div class="caption row">
+									<div class="tEng"><span class="icon n1">1</span>When is your <span class="color c1">piano concert?</span></div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">It’s on <span class="color c2">June 4th.</span></div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Can you come to my <span class="color c1">piano concert?</span></div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Sure, I can.</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">When is your <span class="color c3">school festival?</span></div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">It's on <span class="color c4">July 11th.</span></div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Can you come to my <span class="color c3">school festival?</span></div>
+								</div>
+								<div class="caption row" style="margin-bottom: 100px">
+									<div class="tEng">Sorry, I can't.</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng"><span class="icon n1">2</span>When is your <span class="color c1">basketball game</span>?</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">It’s on <span class="color c2">August 8th</span>.</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Can you come to my <span class="color c1">basketball game</span>?</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Sure, I can.</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">When is your <span class="color c3">pizza party</span>?</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">It's on <span class="color c4">September 22nd</span>.</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Can you come to my <span class="color c3">pizza party</span>?</div>
+								</div>
+								<div class="caption row">
+									<div class="tEng">Sorry, I can't.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnTran btnPopup" title="해석" data-popup="pop_script_01">해석</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : pop_script_01 - 가사 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_01" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="" data-compo="audio subtitle scroll">
+						</div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+						<div class="scrollContent">
+							<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+								<div class="script_role script_tran">
+									<ul class="pop_num_list" data-layout="note">
+										<li>
+											<div class="caption row tac">
+												<div class="tEng">It's on June 4th</div>
+												<div class="tKor">6월 4일요</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon n1">1</span>When is your piano concert?</div>
+												<div class="tKor">네 피아노 콘서트는 언제니</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">It’s on June 4th.</div>
+												<div class="tKor">6월 4일요.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Can you come to my piano concert?</div>
+												<div class="tKor">제 피아노 콘서트에 올 수 있으세요?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Sure, I can.</div>
+												<div class="tKor">좋아, 난 갈 수 있단다.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">When is your school festival?</div>
+												<div class="tKor">네 학교 축제는 언제니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">It's on July 11th.</div>
+												<div class="tKor">7월 11일요.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Can you come to my school festival?</div>
+												<div class="tKor">제 학교 축제에 올 수 있으세요?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Sorry, I can't.</div>
+												<div class="tKor">미안, 난 못 간단다.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption row">
+												<div class="tEng"><span class="icon n2">2</span>When is your basketball game?</div>
+												<div class="tKor">네 농구 경기는 언제니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">It’s on August 8th.</div>
+												<div class="tKor">8월 8일요.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Can you come to my basketball game?</div>
+												<div class="tKor">제 농구 경기에 올 수 있으세요?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Sure, I can.</div>
+												<div class="tKor">좋아, 난 갈 수 있단다.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">When is your pizza party?</div>
+												<div class="tKor">네 피자 파티는 언제니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">It's on September 22nd.</div>
+												<div class="tKor">9월 22일요.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Can you come to my pizza party?</div>
+												<div class="tKor">제 피자 파티에 올 수 있으세요?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">Sorry, I can't.</div>
+												<div class="tKor">미안, 난 못 간단다.</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+
+		</div>
+
+        <!-- Navigation -->
+        <div id="nav"></div>
+	</div>
+</body>
+
+</html>

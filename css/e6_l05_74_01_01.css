@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* page - e6_l05_74_01_01 */
+
+.color01 {
+  color: #a44d48;
+}
+.read_box .readtxt {
+  font-size: 50px;
+  text-align: center;
+}
+.read_box .readtxt:nth-child(1) {
+  position: relative;
+  background: url(../images/e6_l05_74_01_01_bg_01.png) no-repeat center top;
+  width: 1109px;
+  height: 462px;
+  margin: 0 auto;
+}
+.read_box .readtxt:nth-child(1) .show {
+  margin: 56px 160px 0 0;
+  letter-spacing: -4px;
+}
+.read_box .readtxt:nth-child(1) .title {
+  color: #016201;
+  margin-bottom: 40px;
+}
+.read_box .readtxt:nth-child(1) {
+}
+.read_box .readtxt:nth-child(2) {
+  position: relative;
+  background: url(../images/e6_l05_74_01_01_bg_02.png) no-repeat center top;
+  width: 1033px;
+  height: 505px;
+  margin: 0 auto;
+}
+.read_box .readtxt:nth-child(3) {
+  position: relative;
+  background: url(../images/e6_l05_74_01_01_bg_03.png) no-repeat center top;
+  width: 1065px;
+  height: 629px;
+  margin: 0 auto;
+}

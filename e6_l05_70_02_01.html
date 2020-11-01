@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+  <script src="./js/sync.js"></script>
+
+	<!-- page css -->
+	<link rel="stylesheet" type="text/css" href="./css/e6_l05_70_02_01.css">
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Read and Do"></div>
+
+			<!-- Content -->
+			<div class="content quizContent">
+				<div class="chapter_wrap" data-chapter="Read and Do">
+					<div class="title_wrap">
+						<div class="subtitle quizMarking" data-marking="Quiz_A" data-bullet="green">
+							<p class="txt">퍼즐을 맞춘 다음 행사 달력에 알맞은 날짜를 써 봅시다.</p>
+						</div>
+					</div>
+
+					<div class="inner_wrap">
+            <assessmentItem class="quizType" data-qid="Quiz_A" data-question-type="draw_leaveuiz" data-response-type="etc" data-marking="true">
+              <itemBody>
+                <div class="draw_set" data-layout="hori">
+                  <div class="draw_canvas drawArea" quiz="dragLine,toggle">
+                    <ul class="startWrap">
+                      <li class="dot lineStart" data-num="0"></li>
+                      <li class="dot lineStart" data-num="1"></li>
+                      <li class="dot lineStart" data-num="2"></li>
+                    </ul>
+                    <ul class="goalWrap">
+                      <li class="dot lineEnd" data-num="0"></li>
+                      <li class="dot lineEnd" data-num="1"></li>
+                      <li class="dot lineEnd" data-num="2"></li>
+                    </ul>
+                  </div>
+                  <svg class="svgContainer">
+                    <line class="answerLine" x1="32" y1="63" x2="165" y2="378"></line>
+                    <line class="answerLine" x1="32" y1="218" x2="165" y2="218"></line>
+                    <line class="answerLine" x1="32" y1="378" x2="165" y2="63"></line>
+                  </svg>
+                  <ul class="draw_leave">
+                    <li>
+                      <p class="mp_text" data-media=""><span class="icon" data-icon="q_num_1"></span>When is your school festival?</p>
+                      <div class="btn_each n1" title="정답">정답</div>
+                    </li>
+                    <li>
+                      <p class="mp_text" data-media=""><span class="icon" data-icon="q_num_2"></span>When is your basketball game?</p>
+                      <div class="btn_each n2" title="정답">정답</div>
+                    </li>
+                    <li>
+                      <p class="mp_text" data-media=""><span class="icon" data-icon="q_num_3"></span>When is your pizza party?</p>
+                      <div class="btn_each n3" title="정답">정답</div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      
+                    </li>
+                  </ul>
+                  <ul class="draw_arrival">
+                    <li><p class="mp_text" data-media=""><span class="icon" data-icon="q_num_a"></span>It's on <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June 4th.</p></li>
+                    <li><p class="mp_text" data-media=""><span class="icon" data-icon="q_num_b"></span>It's on <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July 10th.</p></li>
+                    <li><p class="mp_text" data-media=""><span class="icon" data-icon="q_num_c"></span>It's on <br>September 2nd.</p></li>
+                  </ul>
+                </div>
+                <correctResponse class="answerCorrect">3//2//1</correctResponse>
+              </itemBody>
+            </assessmentItem>
+
+            <div class="btn_wrap">
+              <div class="feedMessage feedMotion quiz">문제를 먼저 풀어 보세요.</div>
+              <div class="ibtn btnCheck" title="정답 확인" data-target="Quiz_A">정답 확인</div>
+              <div class="ibtn btnReplay" title="다시 하기" data-target="Quiz_A">다시 하기</div>
+              <div class="ibtn btnAnswer" title="전체 정답" data-target="Quiz_A">전체 정답</div>
+            </div>
+          </div>
+
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnTran btnPopup" title="해석 보기" data-popup="pop_script_02">해석 보기</div>
+				</div>
+
+			</div>
+
+			<!-- Pop-up Content : pop_script_02 - 해석 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_02" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_2" data-media="" data-compo="audio subtitle scroll"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_2">
+						<div class="scrollContent">
+							<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+								<div class="script_role script_tran">
+                  <ul class="pop_num_list" data-layout="gray_num">
+                    <li>
+                      <div class="caption row">
+                        <div class="tEng">When is your school festival?</div>
+                        <div class="tKor">네 학교 축제는 언제니?</div>
+                      </div>
+                      <div class="caption row">
+                        <div class="tEng">It's on September 2nd.</div>
+                        <div class="tKor">9월 2일이야.</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="caption row">
+                        <div class="tEng">When is your basketball game?</div>
+                        <div class="tKor">네 농구 경기는 언제니?</div>
+                      </div>
+                      <div class="caption row">
+                        <div class="tEng">It's on July 10th.</div>
+                        <div class="tKor">7월 10일이야.</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="caption row">
+                        <div class="tEng">When is your pizza party?</div>
+                        <div class="tKor">네 피자 파티는 언제니?</div>
+                      </div>
+                      <div class="caption row">
+                        <div class="tEng">It's on June 4th.</div>
+                        <div class="tKor">6월 4일이야.</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>

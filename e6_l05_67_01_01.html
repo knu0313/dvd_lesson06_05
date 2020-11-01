@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Look and Listen"></div>
+
+			<!-- Content -->
+			<div class="content videoType">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab on" data-page="e6_l05_67_01_01.html">듣고 말하기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_67_01_02.html">퀴즈</div>
+						<div class="al_btn btnTab" data-page="e6_l05_67_01_03.html">역할놀이</div>
+					</div>
+				</div>
+
+				<div class="video_content">
+					<div id="syncV_P_1" class="mp_video" data-media="" data-compo="video volume scene turn follow btnSubtitle custom:custom_syncV_P_1"></div>
+
+					<!-- 자막 -->
+					<div id="subtitle_syncV_P_1" class="videoInnerScript">
+						<div class="caption">
+							<p class="tEng"></p>
+							<p class="tKor"></p>
+						</div>
+					</div>
+
+					<!-- 장면듣기 -->
+					<div id="scene_syncV_P_1" class="videoInnerScene"></div>
+
+					<!-- 한턴듣기 -->
+					<div id="turn_syncV_P_1" class="videoInnerTurn"></div>
+
+					<!-- 커스텀 추가 버튼 입니다. -->
+					<div id="custom_syncV_P_1" class="videoCustomBtnWrap">
+						<div class="btnFullScript btnPopup" data-popup="pop_script_syncV_P_1" data-overlap="true" title="대본 보기"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : pop_script_syncV_P_1 - 대본 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_syncV_P_1" class="pop_container" data-type="Full" data-layout="roleScript">
+					<div class="pop_title">
+						<p class="txt">대본 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="11_s_1_a" data-compo="audio subtitle btnLanguage scroll"></div>
+						<div class="btnPrint"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+						<div class="scrollContent">
+							<div class="scroll_detail">
+								<!-- ▼ Scroll Content Detail -->
+								<div class="script_role" data-layout="middle">
+									<ul class="pop_num_list" data-layout="gray_num">
+										<li>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Lucy:</span>Wow, it’s beautiful! That’s me.</div>
+												<div class="tKor">와, 아름다워! 저것은 내 별자리야.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Junho:</span>Oh, when is your birthday?</div>
+												<div class="tKor">오, 네 생일이 언제인데?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Lucy:</span>It’s on September 18th. When is yours?</div>
+												<div class="tKor">9월 18일이야. 네 생일은 언제야?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Junho:</span>It’s on March 2nd.</div>
+												<div class="tKor">3월 2일이야.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Harry:</span>This is for you.</div>
+												<div class="tKor">이것을 받으렴.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Junho:</span>Oh, a birthday party!</div>
+												<div class="tKor">오, 생일 파티네!</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Lucy:</span>When is it?</div>
+												<div class="tKor">파티가 언제야?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Harry:</span>It's on June 7th. Can you come to my birthday party?</div>
+												<div class="tKor">6월 7일이야. 내 생일 파티에 올 수 있니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Junho, Lucy:</span> Sure, I can.</div>
+												<div class="tKor">좋아, 갈 수 있어.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Harry:</span>Great! Please come to my house at 4.</div>
+												<div class="tKor">좋아! 우리 집에 4시까지 와 줘.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Harry:</span>Next Friday is my birthday. Can you come to my birthday party?</div>
+												<div class="tKor">다음 금요일은 내 생일이야. 내 생일 파티에 올 수 있니?</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Hana:</span>June 7th? That’s my birthday, too. Let’s have a party together!</div>
+												<div class="tKor">6월 7일? 내 생일이기도 해. 같이 파티하자!</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng"><span class="icon txt">Harry:</span>Great idea! I can’t wait!</div>
+												<div class="tKor">좋은 생각이야! 난 너무 기대돼!</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div> <!-- ▲ Scroll Content Detail -->
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>

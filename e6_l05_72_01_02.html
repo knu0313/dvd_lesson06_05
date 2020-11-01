@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.tabContent .tabDetail > li:nth-child(1){background: url('./images/e6_l05_72_01_02_01.png') no-repeat; background-size: 100% auto;}
+		.tabContent .tabDetail > li:nth-child(2){background: url('./images/e6_l05_72_01_02_02.png') no-repeat; background-size: 100% auto;}
+		.tabContent .tabDetail > li:nth-child(3){background: url('./images/') no-repeat; background-size: 100% auto;}
+
+		.reading_container .btn_wrap{top: 0; left: -60px; right: auto;}
+		.read_layout{position: absolute;}
+    .layout1{top: 190px; left: 530px; letter-spacing: -.5px;}
+    .layout1 .title {text-align: center; margin-bottom: 15px; color: #015cb9;}
+    .layout1 .sub {position: absolute; left: -258px; bottom: -73px;}
+    .layout2{top: 250px; left: 186px;}
+    .layout2 .title {text-align: center; margin-bottom: 15px; color: #9a3499;}
+    .layout2 .sub {position: absolute; right: -385px; bottom: -80px;}
+    .layout3{top: 158px; left: 400px;}
+
+    .script_role .row.title {text-align: center;}
+    .dashLine {border-top: 3px dashed #000; margin: 15px 0;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Let’s Read"></div>
+
+			<!-- Content -->
+			<div class="content" data-chapter="read">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab" data-page="e6_l05_72_01_01.html">읽기 전 활동</div>
+						<div class="al_btn btnTab on" data-page="e6_l05_72_01_02.html">읽기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_72_01_03.html">따라 읽기</div>
+					</div>
+				</div>
+
+				<div class="read_content">
+					<div class="reading_audio">
+						<div class="mp3_control">
+							<div class="mp_audio" id="syncA_0" data-media="" data-compo="audio subtitle exception:movetab@36.4 exception:disablesubtitleclick"></div>
+						</div>
+					</div>
+
+					<div class="tabContent tabContainer">
+						<ul class="tabMenu tabList mpSync">
+							<li class="on">1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+
+						<ul class="tabDetail tabContentList" id="subtitle_syncA_0">
+							<li class="on">
+								<div class="reading_container" id="subtitle_syncA_1">
+									<div class="read_layout layout1">
+										<div class="caption row title">
+											<div class="tEng ">Movie Night</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng ">Do you like movies?</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">Then don't miss the Movie Night!</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">It's on July 10th</div>
+										</div>
+										<div class="caption row ">
+											<div class="tEng">The movie is "Funny Family."</div>
+										</div>
+										<div class="caption row ">
+											<div class="tEng">It starts at 9 p.m. Don't be late!</div>
+										</div>
+										<div class="caption row sub">
+											<div class="tEng">July 10th</div>
+										</div>
+									</div>
+
+									<!--  Audio Player Start  -->
+									<div class="mp3_control">
+										<div class="mp_audio" id="syncA_1" data-media="" data-compo="audio subtitle"></div>
+									</div>
+									<!--  Audio Player End  -->
+								</div>
+							</li>
+							<li>
+								<div class="reading_container" id="subtitle_syncA_2">
+									<div class="read_layout layout2">
+										<div class="caption row title">
+											<div class="tEng">Genie's Magic Show</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">The magic show is on July 2nd.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">You can see exciting magic.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">Come and have fun at the event!</div>
+										</div>
+										<div class="caption row sub">
+											<div class="tEng">July 2nd</div>
+										</div>
+									</div>
+									<!--  Audio Player Start  -->
+									<div class="mp3_control">
+										<div class="mp_audio" id="syncA_2" data-media="" data-compo="audio subtitle"></div>
+									</div>
+									<!--  Audio Player End  -->
+								</div>
+							</li>
+							<li>
+								<div class="reading_container" id="subtitle_syncA_3">
+									<div class="read_layout layout3">
+										<div class="caption row">
+											<div class="tEng">I have a magic show at the school festival.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">When is it?</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">Can you July 2nd at 2 o'clock.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">Sure, I can!</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">Sorry, I can't.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">It's my sister's birthday.</div>
+										</div>
+										<div class="caption row">
+											<div class="tEng">That's okay, Emma. Have a nice time!</div>
+										</div>
+									</div>
+									<!--  Audio Player Start  -->
+									<div class="mp3_control">
+										<div class="mp_audio" id="syncA_2" data-media="" data-compo="audio subtitle"></div>
+									</div>
+									<!--  Audio Player End  -->
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="btn_wrap trans">
+						<div class="ibtn btnTran btnPopup" title="해석 보기" data-popup="pop_full_script">해석 보기</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : 해석 보기 -->
+			<div class="popWrap">
+				<div id="pop_full_script" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="" data-compo="audio subtitle scroll"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+						<div class="scrollContent">
+							<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+								<div class="script_role script_tran">
+									<div class="caption row title">
+										<div class="tEng">Movie Night</div>
+										<div class="tKor">영화의 밤</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Do you like movies?</div>
+										<div class="tKor">영화를 좋아하나요?</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Then don't miss the Movie Night!</div>
+										<div class="tKor">그렇다면 '영화의 밤'을 놓치지 마세요!</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">It's on July 10th.</div>
+										<div class="tKor">7월 10일입니다.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">The movie is "Funny Family."</div>
+										<div class="tKor">영화는 '재미있는 가족'입니다.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">It starts at 9 p.m.</div>
+										<div class="tKor">오후 9시에 시작해요.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Don't be late!</div>
+										<div class="tKor">늦지 마세요!</div>
+                  </div>
+                  <div class="dashLine"></div>
+                  <div class="caption row title">
+                    <div class="tEng">Genie's Magic Show</div>
+                    <div class="tKor">Genie의 마술 쇼</div>
+                  </div>
+									<div class="caption row">
+										<div class="tEng">The magic show is on July 2nd.</div>
+										<div class="tKor">마술 쇼는 7월 2일입니다.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">You can see exciting magic.</div>
+										<div class="tKor">당신은 흥미진진한 마술을 볼 수 있어요.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Come and have fun at the event!</div>
+										<div class="tKor">행사에 와서 즐거운 시간 보내세요!</div>
+                  </div>
+                  <div class="dashLine"></div>
+									<div class="caption row">
+										<div class="tEng">I have a magic show at the school festival.</div>
+										<div class="tKor">나 이번 학교 축제 때 마술 쇼를 해.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Can you come to my show?</div>
+										<div class="tKor">내 마술 쇼에 올 수 있니?</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">When is it?</div>
+										<div class="tKor">그게 언제야?</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">It's on July 2nd at 2 o'clock.</div>
+										<div class="tKor">7월 2일, 2시야.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Sure, I can!</div>
+										<div class="tKor">좋아, 난 갈 수 있어!</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Sorry, I can't.</div>
+										<div class="tKor">미안하지만 난 못 가.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">It's my sister's birthday.</div>
+										<div class="tKor">내 동생 생일이거든.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">That's okay, Emma. Have a nice time!</div>
+										<div class="tKor">괜찮아, Emma. 즐거운 시간 보내!</div>
+									</div>
+								</div>
+							</div> <!-- ▲ Scroll Content Detail -->
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+    </div>
+</body>
+
+</html>

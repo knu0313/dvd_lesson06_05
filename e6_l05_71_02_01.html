@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.play_box{text-align: center;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Play Together 3"></div>
+
+			<!-- Content -->
+			<div class="content">
+				<div class="title_wrap">
+					<div class="corner">
+						<p>사라진 문장 찾기</p>
+					</div>
+					<div class="guide_btn_wrap">
+            <div class="ibtn btnGuide btnPopup" data-popup="popUp_01">활동 방법</div>
+            <div class="ibtn btnMaterial download" data-url="">활동 자료</div>
+					</div>
+				</div>
+
+				<div class="play_box">
+					<img src="images/e6_l05_71_02_01.png" style="margin-top: 10px;" />
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+				<div id="popUp_01" class="pop_container" data-type="Full" data-layout="guide">
+					<div class="pop_title">
+						<p class="txt">활동 방법</p>
+					</div>
+					<div class="pop_content">
+            <div class="scrollContent">
+              <div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+                <div class="manual_box">
+                  <ul class="pop_num_list" data-layout="blue">
+                    <li>
+                      4명이 한 모둠을 이루고, 선생님은 문장 카드를 칠판 여기저기에 붙여요.
+                    </li>
+                    <li>
+                      선생님이 열을 세는 동안 학생들은 칠판에 붙은 문장 카드를 기억한 후, 눈을 감아요.
+                    </li>
+                    <li>
+                      선생님이 문장 카드 하나를 숨긴 후 “When is your basketball game?”과 같이 물으면, 각 모둠은 사라진 카드의 문장을 종이에 쓰고 다 같이 읽어요.
+                    </li>
+                    <li>
+                      가장 먼저 문장을 바르게 쓰고 읽은 모둠이 1점을 얻어요.
+                    </li>
+                    <li>
+                      같은 방법으로 활동을 계속하여 점수가 가장 높은 모둠이 이겨요.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>

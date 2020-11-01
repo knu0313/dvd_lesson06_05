@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Listen and Say 2"></div>
+
+			<!-- Content -->
+			<div class="content videoType">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab on" data-page="e6_l05_66_04_01.html">듣고 말하기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_66_04_02.html">역할놀이</div>
+					</div>
+				</div>
+
+				<div class="video_content">
+					<div id="syncV_P_1" class="mp_video" data-media="" data-compo="video volume turn follow btnSubtitle custom:custom_syncV_P_1"></div>
+
+					<!-- 자막 -->
+					<div id="subtitle_syncV_P_1" class="videoInnerScript">
+						<div class="caption">
+							<p class="tEng"></p>
+							<p class="tKor"></p>
+						</div>
+					</div>
+
+					<!-- 장면듣기 -->
+					<div id="scene_syncV_P_1" class="videoInnerScene"></div>
+
+					<!-- 한턴듣기 -->
+					<div id="turn_syncV_P_1" class="videoInnerTurn"></div>
+
+					<!-- 커스텀 추가 버튼 입니다. -->
+					<div id="custom_syncV_P_1" class="videoCustomBtnWrap">
+						<div class="btnFullScript btnPopup" data-popup="pop_script_syncV_P_1" data-overlap="true" title="대본 보기"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Pop-up Content : pop_script_syncV_P_1 - 대본 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_syncV_P_1" class="pop_container" data-type="Full" data-layout="roleScript">
+					<div class="pop_title">
+						<p class="txt">대본 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="" data-compo="audio subtitle btnLanguage"></div> <!--  exception:passOnReset -->
+						<div class="btnPrint"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+						<div class="script_role" data-layout="small">
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">Tina:</span> My pizza party is on July 1st. Can you come to my party?</div>
+								<div class="tKor">내 피자 파티는 7월 1일이야. 내 파티에 올 수 있니?</div>
+							</div>
+
+							<div class="caption row">
+								<div class="tEng"><span class="icon txt">Yuri:</span> Sorry, I can't. I have a piano concert.</div>
+								<div class="tKor">미안, 난 못 가. 나는 피아노 콘서트가 있어</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>

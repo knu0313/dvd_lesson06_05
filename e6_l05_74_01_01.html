@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<!-- page css -->
+	<link rel="stylesheet" type="text/css" href="./css/e6_l05_74_01_01.css">
+ 
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Project"></div>
+
+			<!-- Content -->
+			<div class="content quizContent">
+				<div class="title_wrap">
+					<div class="corner">
+						<p>생일 파티 초대장 만들기</p>
+					</div>
+					<div class="subtitle quizMarking" data-bullet="step1" data-marking="Quiz_A" style="letter-spacing: -4px;">
+						<p class="txt">생일 파티 초대장을 읽고, 친구들의 생일을 바르게 연결해 봅시다.</p>
+					</div>
+				</div>
+
+				<div class="scrollContent" style="height: 450px;">
+					<div id="scroll_sync" class="scroll_detail">
+						<div class="read_box">
+							<div class="readtxt">
+								<div class="audio_wrap">
+									<div class="ibtn btnAudio mp_audio" title="음성 듣기" id="syncA_1" data-media="" data-compo="btnonly subtitle scroll exception:spscroll@scroll_sync">음성 듣기</div>
+								</div>
+								<div id="subtitle_syncA_1">
+									<div class="caption">
+										<div class="tEng title">
+											Matt's Birthday Party
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+											Let's play together!
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+                      <span class="color01">When:</span> September 20th, 4 p.m.
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      <span class="color01">Where:</span> Sports Park
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="readtxt">
+								<div class="audio_wrap">
+									<div class="ibtn btnAudio mp_audio" title="음성 듣기" id="syncA_2" data-media="" data-compo="btnonly subtitle scroll exception:spscroll@scroll_sync">음성 듣기</div>
+								</div>
+								<div id="subtitle_syncA_2">
+									<div class="caption">
+										<div class="tEng">
+											Brian's Birthday Party
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+											My Birthday is on July 7th.
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+                      Please come to Blue Swimming Pool at 2.
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      We can swim and dance together.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="readtxt">
+								<div class="audio_wrap">
+									<div class="ibtn btnAudio mp_audio" title="음성 듣기" id="syncA_3" data-media="" data-compo="btnonly subtitle scroll exception:spscroll@scroll_sync">음성 듣기</div>
+								</div>
+								<div id="subtitle_syncA_3">
+									<div class="caption">
+										<div class="tEng">
+											Dear Elly,
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+                      Hi!
+										</div>
+									</div>
+									<div class="caption">
+										<div class="tEng">
+                      Can you come to my birthday party?
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      It’s on August 20th.
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      Let’s have pizza and chicken.
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      Please come to my house at 6.
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      Love,
+										</div>
+									</div>
+									<div class="caption">
+                    <div class="tEng">
+                      Alice
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="text_box">
+
+							<assessmentItem class="quizType" data-qid="Quiz_A" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-marking="true">
+								<itemBody>
+									<div class="quiz_essay quizEssay">
+										<p class="txt mp_text" data-media="18_o_2">Soccer Club</p>
+										<div class="input_wrap">
+											<input id="saveData_Q_A_1" type="text" class="essayWrite input_txt noSound" title="입력" maxlength="1" data-layout="box"/>
+											<correctResponse class="answerCorrect essayAnswer answer_txt">b</correctResponse>
+										</div>
+										<div class="btn_each n1" title="정답">정답</div>
+									</div>
+
+									<div class="quiz_essay quizEssay">
+										<p class="txt mp_text" data-media="18_o_8">Science Club</p>
+										<div class="input_wrap">
+											<input id="saveData_Q_A_2" type="text" class="essayWrite input_txt noSound" title="입력" maxlength="1" data-layout="box"/>
+											<correctResponse class="answerCorrect essayAnswer answer_txt">d</correctResponse>
+										</div>
+										<div class="btn_each n2" title="정답">정답</div>
+									</div>
+								</itemBody>
+							</assessmentItem>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_wrap">
+					<div class="feedMessage feedMotion quiz">문제를 먼저 풀어 보세요.</div>
+					<div class="ibtn btnCheck" title="정답 확인" data-target="Quiz_A">정답 확인</div>
+					<div class="ibtn btnReplay" title="다시 하기" data-target="Quiz_A">다시 하기</div>
+					<div class="ibtn btnAnswer" title="전체 정답" data-target="Quiz_A">전체 정답</div>
+				</div>
+
+				<div class="btn_wrap trans">
+					<div class="ibtn btnTran btnPopup" title="해석 보기" data-popup="pop_script_01">해석 보기</div>
+				</div>
+
+				<!-- Left Side Btn -->
+				<div class="aside_left">
+					<div class="al_wrap">
+						<div class="al_btn btnTab bullet_step1 on" data-page="e6_l01_18_01_01.html">Step 1</div>
+						<div class="al_btn btnTab bullet_step2" data-page="e6_l01_18_01_02.html">Step 2</div>
+						<div class="al_btn btnTab bullet_step3" data-page="e6_l01_18_01_03.html">Step 3</div>
+						<div class="al_btn btnTab bullet_step4" data-page="e6_l01_18_01_04.html">Step 4</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content : pop_script_01 - 해석 보기 -->
+			<div class="popWrap">
+				<div id="pop_script_01" class="pop_container" data-type="Full" data-layout="transScript">
+					<div class="pop_title">
+						<p class="txt">해석 보기</p>
+					</div>
+					<!--  Audio Player Start  -->
+					<div class="mp3_control">
+						<div class="mp_audio" id="syncA_P_1" data-media="18_o_2_a" data-compo="audio subtitle scroll"></div>
+					</div>
+					<!--  Audio Player End  -->
+					<div class="pop_content" id="subtitle_syncA_P_1">
+						<div class="scrollContent">
+							<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+								<div class="script_role script_tran">
+									<div class="caption row">
+										<div class="tEng">Soccer Club</div>
+										<div class="tKor">축구 동아리</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Do you like soccer?</div>
+										<div class="tKor">축구를 좋아하나요?</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Fifth and sixth grades are welcome!</div>
+										<div class="tKor">5학년과 6학년을 환영해요!</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Take soccer lessons from Mr. Kim.</div>
+										<div class="tKor">김 선생님께 축구 수업을 받아 보세요. </div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">It’s fun.</div>
+										<div class="tKor">재미있답니다.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Can you join us?</div>
+										<div class="tKor">우리와 함께 할래요?</div>
+									</div>
+
+									<div class="line_dotted"></div>
+
+									<div class="caption row">
+										<div class="tEng">Science Club</div>
+										<div class="tKor">과학 동아리</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">What’s your favorite subject?</div>
+										<div class="tKor">여러분이 좋아하는 과목이 무엇인가요?</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Science? Then come and join us!</div>
+										<div class="tKor">과학? 그렇다면 우리와 함께 해요!	</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Third and fourth grades are welcome!</div>
+										<div class="tKor">3학년과 4학년을 환영해요!</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">Let’s look at bugs and flowers.</div>
+										<div class="tKor">곤충과 꽃들을 함께 관찰해요.</div>
+									</div>
+									<div class="caption row">
+										<div class="tEng">We meet every Wednesday at 5.</div>
+										<div class="tKor">우리는 매주 수요일 5시에 만납니다.</div>
+									</div>
+
+									<div class="line_dotted"></div>
+
+									<ul class="pop_num_list" data-layout="gray_abc">
+										<li>
+											<div class="caption inline">
+												<div class="tEng">I’m in the third grade.</div>
+											</div>
+											<div class="caption inline">
+												<div class="tEng">I love soccer.</div>
+												<div class="tKor">나는 3학년이야. 나는 축구를 좋아해.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption inline">
+												<div class="tEng">My favorite sport is soccer.</div>
+											</div>
+											<div class="caption inline">
+												<div class="tEng">I’m in the sixth grade.</div>
+												<div class="tKor">내가 가장 좋아하는 운동은 축구야. 나는 6학년이야.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption row">
+												<div class="tEng">My favorite subject is science.</div>
+												<div class="tKor">내가 가장 좋아하는 과목은 과학이야.</div>
+											</div>
+											<div class="caption row">
+												<div class="tEng">I’m in the fifth grade.</div>
+												<div class="tKor">나는 5학년이야.</div>
+											</div>
+										</li>
+										<li>
+											<div class="caption inline">
+												<div class="tEng">I’m in the fourth grade.</div>
+											</div>
+											<div class="caption inline">
+												<div class="tEng">I like science.</div>
+												<div class="tKor">나는 4학년이야. 나는 과학을 좋아해.</div>
+											</div>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+        <!-- Navigation -->
+		<div id="nav">
+			<div class="side_next_btn popupSlideWrap">
+				<div class="side_prev prev"></div>
+				<div class="side_next next"></div>
+			</div>
+		</div>
+    </div>
+</body>
+
+</html>

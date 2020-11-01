@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.inner_btn_wrap{top:10px;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Get Ready"></div>
+
+			<!-- Content -->
+			<div class="content" data-chapter="get_ready">
+				<div class="tabContent tabContainer">
+					<ul class="tabMenu tabList">
+						<li class="on">학습 목표</li>
+						<li>My Goal</li>
+						<li>낱말 보기</li>
+					</ul>
+					<ul class="tabDetail tabContentList">
+						<li class="on">
+							<div class="chapter_quest">
+								<div class="chapter_detail">
+									<div class="bull_dot">
+										<div class="txt">
+											날짜를 묻고 답하는 말을 배워요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnAudio mp_audio" title="음성 듣기" id="syncA_01" data-media="" data-compo="btnonly notShow">음성 듣기</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="bull_dot">
+										<div class="txt">
+											초대하고 답하는 말을 배워요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnAudio mp_audio" title="음성 듣기" id="syncA_02" data-media="" data-compo="btnonly notShow">음성 듣기</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="bull_dot">
+										<div class="txt">
+											행사에 초대하는 글을 읽고 주요 문장을 써요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnPen"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="blackboard bullResult">
+									<div class="inner_wrap">
+										<div class="inner" id="subtitle_syncA_01">
+											<div class="caption row">
+												<p class="txt tEng">
+													When is your birthday?
+												</p>
+											</div>
+											<div class="caption row">
+												<p class="txt tEng">
+													It's on September 18th.
+												</p>
+											</div>
+										</div>
+										<div class="inner" id="subtitle_syncA_02">
+											<div class="caption row">
+												<p class="txt tEng">
+													Can you come to my birthday party?
+												</p>
+											</div>
+											<div class="caption inline">
+												<p class="txt tEng">
+													Sure, I can.
+												</p>
+											</div>
+											<span class="txt">/</span>
+											<div class="caption inline">
+												<p class="txt tEng">
+													Sorry, I can’t.
+												</p>
+											</div>
+										</div>
+										<div class="inner">
+											<div class="caption row">
+												<p class="txt mp_text" id="syncA_03" data-media="">
+													When is your piano concert?
+												</p>
+											</div>
+											<div class="caption row">
+												<p class="txt mp_text" id="syncA_04" data-media="">
+													It's on June 4th.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="chapter_goal">
+								<div class="bull_dot">
+									<div class="txt">
+										이 단원에서 무엇을 배우고 싶은지 써 봅시다.
+									</div>
+								</div>
+								<div class="write_box">
+									<div class="input_wrap">
+										<textarea id="saveData_Mygoal_1" class="essayWrite input_txt noSound" title="입력" rows="3"></textarea>
+									</div>
+									<p>을(를) 배우고 싶어요.</p>
+								</div>
+
+								<div class="btn_wrap">
+									<div class="feedMessage feedMotion saved">저장되었습니다.</div>
+									<div class="ibtn btnSave" title="저장" data-target="saveData_Mygoal_1">저장하기</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="audio_wrap">
+								<div class="ibtn btnAudio mp_audio" id="syncA_1" data-media="" data-compo="btnonly subtitle" title="낱말 보기">음성 듣기</div>
+							</div>
+							<div class="chapter_word" id="subtitle_syncA_1">
+								<div class="scrollContent">
+									<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_01.png" />
+												</div>
+												<p>January</p>
+												<p class="tKor">1월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="0"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_02.png" />
+												</div>
+												<p>February</p>
+												<p class="tKor">2월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="1"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_03.png" />
+												</div>
+												<p>March</p>
+												<p class="tKor">3월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="2"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_04.png" />
+												</div>
+												<p>April</p>
+												<p class="tKor">4월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="3"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_05.png" />
+												</div>
+												<p>May</p>
+												<p class="tKor">5월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="4"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_06.png" />
+												</div>
+												<p>June</p>
+												<p class="tKor">6월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="5"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_07.png" />
+												</div>
+												<p>July</p>
+												<p class="tKor">7월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="6"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_08.png" />
+												</div>
+												<p>August</p>
+												<p class="tKor">8월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="7"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_09.png" />
+												</div>
+												<p>September</p>
+												<p class="tKor">9월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="8"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_10.png" />
+												</div>
+												<p>October</p>
+												<p class="tKor">10월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="9"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_11.png" />
+												</div>
+												<p>November</p>
+												<p class="tKor">11월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="10"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_12.png" />
+												</div>
+												<p>December</p>
+												<p class="tKor">12월</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="11"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_13.png" />
+												</div>
+												<p>basketball game</p>
+												<p class="tKor">농구 경기</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="12"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_14.png" />
+												</div>
+												<p>birthday party</p>
+												<p class="tKor">생일 파티</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="13"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_15.png" />
+												</div>
+												<p>piano concert</p>
+												<p class="tKor">피아노 연주회</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="14"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_16.png" />
+												</div>
+												<p>pizza party</p>
+												<p class="tKor">피자 파티</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="15"></div>
+										</div>
+										<div class="word_list caption">
+											<div class="tEng">
+												<div class="img_box">
+													<img src="images/e6_l05_66_02_17.png" />
+												</div>
+												<p>school festival</p>
+												<p class="tKor">학교 축제</p>
+											</div>
+											<div class="btn_plus btnPopup mp_text" data-media="" data-popup="popUp_01" data-slide-idx="16"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+				<div id="popUp_01" class="pop_container" data-type="Full" data-layer="wordLook">
+					<div class="pop_content">
+						<div class="slideContent slideWrap" data-navigation="false" data-circulation="false">
+							<ul class="slideDetail">
+								<!-- ▼ slide Content Detail -->
+								<li class="slideList on">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_01.png" />
+											</div>
+											<p class="tEng">January</p>
+											<p class="tKor">1월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_02.png" />
+											</div>
+											<p class="tEng">February</p>
+											<p class="tKor">2월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_03.png" />
+											</div>
+											<p class="tEng">March</p>
+											<p class="tKor">3월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_04.png" />
+											</div>
+											<p class="tEng">April</p>
+											<p class="tKor">4월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="10_o_21">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_05.png" />
+											</div>
+											<p class="tEng">May</p>
+											<p class="tKor">5월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_06.png" />
+											</div>
+											<p class="tEng">June</p>
+											<p class="tKor">6월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_07.png" />
+											</div>
+											<p class="tEng">July</p>
+											<p class="tKor">7월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_08.png" />
+											</div>
+											<p class="tEng">August</p>
+											<p class="tKor">8월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_09.png" />
+											</div>
+											<p class="tEng">September</p>
+											<p class="tKor">9월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_10.png" />
+											</div>
+											<p class="tEng">October</p>
+											<p class="tKor">10월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_11.png" />
+											</div>
+											<p class="tEng">November</p>
+											<p class="tKor">11월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_12.png" />
+											</div>
+											<p class="tEng">December</p>
+											<p class="tKor">12월</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_13.png" />
+											</div>
+											<p class="tEng">basketball game</p>
+											<p class="tKor">농구 경기</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_14.png" />
+											</div>
+											<p class="tEng">birthday party</p>
+											<p class="tKor">생일 파티</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_15.png" />
+											</div>
+											<p class="tEng">piano concert</p>
+											<p class="tKor">피아노 연주회</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_16.png" />
+											</div>
+											<p class="tEng">pizza party</p>
+											<p class="tKor">피자 파티</p>
+										</div>
+									</div>
+								</li>
+								<li class="slideList">
+									<div class="word_list">
+										<div class="mp_text" data-media="">
+											<div class="img_box">
+												<img src="images/e6_l05_66_02_17.png" />
+											</div>
+											<p class="tEng">school festival</p>
+											<p class="tKor">학교 축제</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- wc 확인필요 - 옆으로 가기 버튼 누르면 dvd에서는 해당 음원 자동 재생되는데 빠지기로 한건지 확인이 필요합니다. btn_plus도 누르면 해당 음원 재생되면서 텍스트 하이라이트 들어가는데 임의로 btn_plus 버튼 자체에 mp_text 넣어둔 상태 입니다.(팝업열리면서 색자는 안바뀜)-->
+							<div id="slideBtnWrap">
+								<div class="btnPrev"></div>
+								<div class="btnNext"></div>
+							</div>
+						</div>
+					</div>
+					<button class="btn_close btnPopupClose"></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			// page js ↓
+			// 학습 목표
+			$('.bull_dot .ibtn').on('click', function(e) {
+				var btn = $(this);
+				var idx = $(this).parents('.bull_dot').index();
+
+				$('.bullResult .inner').removeClass('show');
+				if (btn.hasClass('btnPen')) {
+					btn.toggleClass('on');
+					if (btn.hasClass('on')) {
+						$('.bullResult .inner').eq(idx).addClass('show');
+					} else {
+						$('.bullResult .inner').eq(idx).removeClass('show');
+					}
+					playSoundEffect('effect', 'click');
+				} else {
+					$('.bullResult .inner').eq(idx).addClass('show');
+					$('.btnPen').removeClass('on');
+				}
+
+				if (idx == 0) {
+					stopMediaPlayer('syncA_02');
+					stopMediaPlayer('syncA_02');
+				} else if (idx == 1) {
+					stopMediaPlayer('syncA_01');
+					stopMediaPlayer('syncA_02');
+				} else {
+					stopMediaPlayer('syncA_01');
+					stopMediaPlayer('syncA_02');
+				}
+			});
+
+			// 탭 선택
+			$('.tabList > li').on('click', function() {
+				$(".bullResult .inner").removeClass("show");
+			});
+
+			// 저장하기
+			$('.btnSave').on('click', function () {
+				var target = $('#' + this.dataset.target);
+				var inpVal = target.val();
+				var key = textbook.grade + '_' + textbook.page + '_' + target.id;
+
+				localStorage.setItem(key, inpVal);
+
+				$('.feedMessage').show();
+				setTimeout(function() {
+					$('.feedMessage').hide();
+				}, 1000);
+			});
+
+			// 저장한 값 가져오기
+			$('.btnSave').each(function () {
+				var target = $('#' + this.dataset.target);
+				var key = textbook.grade + '_' + textbook.page + '_' + target.id;
+				var savedVal = localStorage.getItem(key);
+
+				target.val(savedVal);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="스스로 해 봐요!"></div>
+
+			<!-- Content -->
+			<div class="content selfTest">
+				<!-- Self Test -->
+				<div class="section">
+					<div class="askContent">
+						<div class="ask_animte">
+							<!-- self test animte area -->
+						</div>
+
+						<div class="ask_test">
+							<div class="ask_level">
+								<div class="levelBtn" data-level="easy" title="쉬움">쉬움</div>
+								<div class="levelBtn" data-level="normal" title="보통">보통</div>
+								<div class="levelBtn" data-level="hard" title="어려움">어려움</div>
+							</div>
+							<ul class="ask_quiz_page">
+								<li> <!-- 1번 문제 -->
+									<div class="ask_quiz quizContent" data-level="easy">
+										<div class="question_txt quizMarking">
+											잘 듣고, 대화에 알맞은 그림을 고르세요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnAudio question mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_1_1">음성 듣기</div>
+											</div>
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_1_1" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<ul class="choiceSelect quiz_multiple float_2r" data-layout="check">
+													<li class="checkItem">
+														<span class="q_icon checkPoint">1</span>
+														<img class="img r_img checkPoint" src="images/selftest2/01_easy_01.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_1_1" type="radio" class="blind" title="선택" value="1"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint">2</span>
+														<img class="img r_img checkPoint" src="images/selftest2/01_easy_02.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_1_2" type="radio" class="blind" title="선택" value="2"/>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">2</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_1">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_1">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_1">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="normal">
+										<div class="question_txt quizMarking">
+											잘 듣고, 그림에 알맞은 대화를 고르세요.
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_1_2" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<img class="img r_img" src="images/selftest2/01_normal_01.png" alt="보기"/>
+												<ul class="choiceSelect quiz_multiple float_3r">
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_1">1</span>
+														<input id="saveData_Q_ASK_1_2_1" type="radio" class="blind" title="선택" value="1"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_1_2">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_2">2</span>
+														<input id="saveData_Q_ASK_1_2_2" type="radio" class="blind" title="선택" value="2"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_1_2">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_3">3</span>
+														<input id="saveData_Q_ASK_1_2_3" type="radio" class="blind" title="선택" value="3"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_1_2">음성 듣기</div>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">3</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_2">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_2">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_2">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent"  data-level="hard">
+                    <div class="question_txt quizMarking">
+											잘 듣고, 내용과 일치하지 <span class="underline">않는</span> 것을 고르세요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnAudio question mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ask_1_3">음성 듣기</div>
+											</div>
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_1_3" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<ul class="choiceSelect quiz_multiple">
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_1">1</span>
+														<span class="q_txt checkPoint">Cody는 피자 파티를 계획하고 있다.</span>
+														<input id="saveData_Q_ASK_1_3_1" type="radio" class="blind" title="선택" value="1"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_2">2</span>
+														<span class="q_txt checkPoint">피자 파티는 6월 23일이다.</span>
+														<input id="saveData_Q_ASK_1_3_2" type="radio" class="blind" title="선택" value="2"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_3">3</span>
+														<span class="q_txt checkPoint">Amy는 Cody의 피자 파티에 참여할 것이다.</span>
+														<input id="saveData_Q_ASK_1_3_3" type="radio" class="blind" title="선택" value="3"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_4">4</span>
+														<span class="q_txt checkPoint">피자 파티는 4시에 Cody의 집에서 열린다.</span>
+														<input id="saveData_Q_ASK_1_3_4" type="radio" class="blind" title="선택" value="4"/>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">2</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_3">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_3">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_3">다음 페이지</div>
+										</div>
+									</div>
+								</li>
+
+								<li> <!-- 2번 문제 -->
+									<div class="ask_quiz quizContent" data-level="easy">
+										<div class="question_txt quizMarking">
+											잘 듣고, 대화에 알맞은 그림을 고르세요.
+											<div class="inner_btn_wrap">
+												<div class="ibtn btnAudio question mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_1">음성 듣기</div>
+											</div>
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_2_1" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<ul class="choiceSelect quiz_multiple float_2r" data-layout="check">
+													<li class="checkItem">
+														<span class="q_icon checkPoint">1</span>
+														<img class="img r_img checkPoint" src="images/selftest2/02_easy_01.png" alt="보기"/>
+														<input id="saveData_Q_ASK_2_1_1" type="radio" class="blind" title="선택" value="1"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint">2</span>
+														<img class="img r_img checkPoint" src="images/selftest2/02_easy_02.png" alt="보기"/>
+														<input id="saveData_Q_ASK_2_1_2" type="radio" class="blind" title="선택" value="2"/>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">2</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_1">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_1">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_1">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="normal">
+										<div class="question_txt quizMarking">
+											잘 듣고, 그림에 알맞은 대화를 고르세요.
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_2_2" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<img class="img r_img" src="images/selftest2/02_normal_01.png" alt="보기"/>
+												<ul class="choiceSelect quiz_multiple float_3r">
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_1">1</span>
+														<input id="saveData_Q_ASK_2_2_1" type="radio" class="blind" title="선택" value="1"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_2">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_2">2</span>
+														<input id="saveData_Q_ASK_2_2_2" type="radio" class="blind" title="선택" value="2"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_2">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_3">3</span>
+														<input id="saveData_Q_ASK_2_2_3" type="radio" class="blind" title="선택" value="3"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_2">음성 듣기</div>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">1</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_2">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_2">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_2">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="hard">
+										<div class="question_txt quizMarking">
+											잘 듣고, <span class="underline">어색한</span> 대화를 고르세요.
+										</div>
+										<assessmentItem class="quizType quizSoundCheck" data-qid="Quiz_ASK_2_3" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<ul class="choiceSelect quiz_multiple sound_align">
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_1">1</span>
+														<input id="saveData_Q_ASK_2_3_1" type="radio" class="blind" title="선택" value="1"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_3">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_2">2</span>
+														<input id="saveData_Q_ASK_2_3_2" type="radio" class="blind" title="선택" value="2"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_3">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_3">3</span>
+														<input id="saveData_Q_ASK_2_3_3" type="radio" class="blind" title="선택" value="3"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_3">음성 듣기</div>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint" data-icon="q_num_4">4</span>
+														<input id="saveData_Q_ASK_2_3_4" type="radio" class="blind" title="선택" value="4"/>
+														<div class="ibtn btnAudio sub mp_audio" data-media="" data-compo="btnonly" data-target="Quiz_ASK_2_3">음성 듣기</div>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">4</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_3">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_3">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_3">다음 페이지</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+
+	<!-- self Test Animte js -->
+	<script src="../../common/js/animate/createjs.min.js"></script>
+	<script src="../../common/js/animate/canvas-init.js"></script>
+	<script src="../../common/js/animate/selfTest-animte-08.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			animateInit('D84302C88A56314093C81F1F735CCC9C', true); // Self Test Animation Start
+
+		}, false);
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* page - e6_l05_72_02_02 */
+.write_box {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: url(../images/e6_l05_72_02_02_bg.png) no-repeat top center;
+  font-size: 48px;
+  padding: 235px 0 0 0;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: -2px;
+}
+.write_box .audio_wrap {
+  position: absolute;
+  width: 46px;
+  left: 100px;
+  top: 250px;
+}
+.write_box .show {
+  display: block;
+  width: 100%;
+}
+.quiz_essay::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.quiz_essay .caption {
+  position: relative;
+  float: left;
+  clear: left;
+  padding-left: 210px;
+  background: url(../images/e6_l05_72_02_02_arr.png) no-repeat left 53px center;
+}
+.quiz_essay .caption + .caption {
+  margin-top: 15px;
+}
+.quiz_essay .caption .btn_each {
+  position: absolute;
+  right: -51px;
+  top: 50%;
+  margin-top: -18px;
+}
+.quiz_essay .caption:nth-child(1) {
+  letter-spacing: 0;
+  background: none;
+}
+.quiz_essay .caption:nth-child(1) .btn_each {
+  right: -106px;
+}
+.quiz_essay .caption:nth-child(2) {
+
+}
+.quiz_essay .caption:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 124px;
+  top: 50%;
+  margin-top: -38px;
+  width: 68px;
+  height: 75px;
+  background: url(../images/e6_l05_72_02_02_ch_01.png) no-repeat center;
+}
+.quiz_essay .caption:nth-child(3)::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 124px;
+  top: 50%;
+  margin-top: -38px;
+  width: 68px;
+  height: 75px;
+  background: url(../images/e6_l05_72_02_02_ch_02.png) no-repeat center;
+}
+.quiz_essay .caption:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 124px;
+  top: 50%;
+  margin-top: -38px;
+  width: 68px;
+  height: 75px;
+  background: url(../images/e6_l05_72_02_02_ch_03.png) no-repeat center;
+}
+.script_role.script_tran li {
+  padding-left: 90px;
+}
+.script_role.script_tran li:nth-child(1) {
+  background: url(../images/e6_l05_72_02_02_ch_02.png) no-repeat left top;
+}
+.script_role.script_tran li:nth-child(2) {
+  background: url(../images/e6_l05_72_02_02_ch_01.png) no-repeat left top;
+}
+.script_role.script_tran li:nth-child(3) {
+  background: url(../images/e6_l05_72_02_02_ch_02.png) no-repeat left top;
+}
+.script_role.script_tran li:nth-child(4) {
+  background: url(../images/e6_l05_72_02_02_ch_03.png) no-repeat left top;
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+  <script src="./js/sync.js"></script>
+  
+  <style>
+    .flexbox {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+      position: relative;
+    }
+    .flexbox > img {
+      -webkit-flex: none;
+      flex: none;
+      margin-right: 30px;
+    }
+    .flexbox > .right {
+      -webkit-flex: auto;
+      flex: auto;
+      position: relative;
+    }
+    .flexbox .example {
+      width: auto;
+    }
+    .flexbox > .right .quiz_essay.quizEssay {
+      width: auto;
+      font-size: 50px;
+    }
+    .flexbox .example .ex_txt {
+      font-size: 50px;
+    }
+    .ask_quiz_page li:nth-child(1) .ask_quiz[data-level="normal"] .float_3r > li {
+      width: 200px;
+      margin-right: 67px;
+    }
+  </style>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="스스로 해 봐요!"></div>
+
+			<!-- Content -->
+			<div class="content selfTest">
+				<!-- Self Test -->
+				<div class="section">
+					<div class="askContent">
+						<div class="ask_animte">
+							<!-- self test animte area -->
+						</div>
+
+						<div class="ask_test">
+							<div class="ask_level">
+								<div class="levelBtn" data-level="easy" title="쉬움">쉬움</div>
+								<div class="levelBtn" data-level="normal" title="보통">보통</div>
+								<div class="levelBtn" data-level="hard" title="어려움">어려움</div>
+							</div>
+							<ul class="ask_quiz_page">
+								<li> <!-- 1번 문제 -->
+									<div class="ask_quiz quizContent" data-level="easy">
+										<div class="question_txt quizMarking">
+											글을 읽고, 알맞은 그림을 고르세요.
+										</div>
+										<assessmentItem class="quizType" data-qid="Quiz_ASK_1_1" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<div class="example">
+													<p class="ex_txt">
+														The magic show is on March 2nd.
+													</p>
+													<p class="ex_txt">
+														You can see exciting magic.
+													</p>
+												</div>
+												<ul class="choiceSelect quiz_multiple float_2r" data-layout="check">
+													<li class="checkItem">
+														<span class="q_icon checkPoint">1</span>
+														<img class="img r_img checkPoint" src="images/selftest4/01_easy_01.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_1_1" type="radio" class="blind" title="선택" value="1"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint">2</span>
+														<img class="img r_img checkPoint" src="images/selftest4/01_easy_02.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_1_2" type="radio" class="blind" title="선택" value="2"/>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">2</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_1">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_1">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_1">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="normal">
+										<div class="question_txt quizMarking">
+											글을 읽고, 알맞은 그림을 고르세요.
+										</div>
+										<assessmentItem class="quizType" data-qid="Quiz_ASK_1_2" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+											<itemBody>
+												<div class="example">
+													<p class="ex_txt">
+                            <div style="text-align: center;">Movie Night</div>
+                            Do you like movies?
+                            <br>The Movie Night is on Septembers 20th.
+                            <br>It starts at 8 p.m.
+													</p>
+												</div>
+												<ul class="choiceSelect quiz_multiple float_3r" data-layout="check">
+													<li class="checkItem">
+														<span class="q_icon checkPoint">1</span>
+														<img class="img r_img checkPoint" src="images/selftest4/01_normal_01.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_2_1" type="radio" class="blind" title="선택" value="1"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint">2</span>
+														<img class="img r_img checkPoint" src="images/selftest4/01_normal_02.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_2_2" type="radio" class="blind" title="선택" value="2"/>
+													</li>
+													<li class="checkItem">
+														<span class="q_icon checkPoint">3</span>
+														<img class="img r_img checkPoint" src="images/selftest4/01_normal_03.png" alt="보기"/>
+														<input id="saveData_Q_ASK_1_2_3" type="radio" class="blind" title="선택" value="3"/>
+													</li>
+												</ul>
+												<correctResponse class="answerCorrect">3</correctResponse>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_2">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_2">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_2">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="hard">
+										<div class="question_txt quizMarking">
+											대화를 읽고, 내용과 일치하지 <span class="underline">않는</span> 문장을 고르세요.
+										</div>
+										<div class="scrollContent">
+											<div class="scroll_detail"> <!-- ▼ Scroll Content Detail -->
+												<assessmentItem class="quizType" data-qid="Quiz_ASK_1_3" data-question-type="choiceQuiz" data-response-type="singleChoice" data-answerBtn="false">
+													<itemBody>
+														<div class="example">
+															<p class="ex_txt" style="text-align: center;">
+																Pizza party
+															</p>
+															<p class="ex_txt">
+																Do you like pizza?
+															</p>
+															<p class="ex_txt">
+																Then don't miss the pizza party!
+															</p>
+															<p class="ex_txt">
+																It's on December 6th.
+															</p>
+															<p class="ex_txt">
+																It starts at 3 p.m. Don't be late.
+															</p>
+														</div>
+														<ul class="choiceSelect quiz_multiple">
+															<li class="checkItem">
+																<span class="q_icon checkPoint" data-icon="q_num_1">1</span>
+																<span class="q_txt checkPoint">피자 파티에 관한 홍보 글이다.</span>
+																<input id="saveData_Q_ASK_1_3_1" type="radio" class="blind" title="선택" value="1"/>
+															</li>
+															<li class="checkItem">
+																<span class="q_icon checkPoint" data-icon="q_num_2">2</span>
+																<span class="q_txt checkPoint">11월 7일에 열린다.</span>
+																<input id="saveData_Q_ASK_1_3_2" type="radio" class="blind" title="선택" value="2"/>
+															</li>
+															<li class="checkItem">
+																<span class="q_icon checkPoint" data-icon="q_num_3">3</span>
+																<span class="q_txt checkPoint">12월 6일에 열린다.</span>
+																<input id="saveData_Q_ASK_1_3_3" type="radio" class="blind" title="선택" value="3"/>
+															</li>
+															<li class="checkItem">
+																<span class="q_icon checkPoint" data-icon="q_num_4">4</span>
+																<span class="q_txt checkPoint">오후 3시에 시작한다.</span>
+																<input id="saveData_Q_ASK_1_3_4" type="radio" class="blind" title="선택" value="4"/>
+															</li>
+														</ul>
+														<correctResponse class="answerCorrect">2</correctResponse>
+													</itemBody>
+												</assessmentItem>
+											</div>
+										</div>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_1_3">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_1_3">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_1_3">다음 페이지</div>
+										</div>
+									</div>
+								</li>
+
+								<li> <!-- 2번 문제 -->
+									<div class="ask_quiz quizContent" data-level="easy">
+										<div class="question_txt quizMarking">
+											글을 읽고, <span class="icon_ex">보기</span>에서 알맞은 낱말을 골라 문장을 완성하세요.
+										</div>
+										<assessmentItem class="quizType" data-qid="Quiz_ASK_2_1" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-answerBtn="false">
+											<itemBody>
+                        <div class="flexbox">
+                          <img class="img r_img" src="images/selftest4/02_easy_01.png" alt="보기"/>
+                          <div class="right">
+                            <div class="example">
+                              <div class="icon_ex">보기</div>
+                              <p class="ex_txt tac">
+                                April<span class="pl60"></span>August
+                              </p>
+                            </div>
+                            <div class="quiz_essay quizEssay">
+                              <div class="tal">
+                                The school festival <br>is on
+                                <div class="input_wrap" style="width: 210px">
+                                  <input id="saveData_Q_ASK_2_1_1" type="text" class="essayWrite input_txt noSound" title="입력"/>
+                                  <correctResponse class="answerCorrect essayAnswer answer_txt">April</correctResponse>
+                                </div>
+                                6th.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_1">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_1">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_1">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="normal">
+										<div class="question_txt quizMarking">
+											그림을 보고, 알맞은 낱말을 써서 문장을 완성하세요.
+										</div>
+										<assessmentItem class="quizType" data-qid="Quiz_ASK_2_2" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-answerBtn="false">
+											<itemBody>
+                        <div>
+                          <img class="img r_img" src="images/selftest4/02_normal_01.png" style="margin: 0 auto 10px;" alt="보기"/>
+                          <div class="quiz_essay quizEssay" style="width: auto;">
+                            <div class="a_c tal">
+                              A: When is your magic show?
+                              <br>B: It's on
+                              <div class="input_wrap" style="width: 200px">
+                                <input type="text" class="essayWrite input_txt noSound" title="입력"/>
+                                <correctResponse class="answerCorrect essayAnswer answer_txt">November</correctResponse>
+                              </div>
+                              <div class="input_wrap" style="width: 200px">
+                                <input type="text" class="essayWrite input_txt noSound" title="입력"/>
+                                <correctResponse class="answerCorrect essayAnswer answer_txt">23rd</correctResponse>
+                              </div>.
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can you
+                              <div class="input_wrap" style="width: 200px">
+                                <input type="text" class="essayWrite input_txt noSound" title="입력"/>
+                                <correctResponse class="answerCorrect essayAnswer answer_txt">come</correctResponse>
+                              </div>
+                              to my show?
+                              <br/>
+                              A: Sure, I can?
+                            </div>
+                          </div>
+                        </div>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_2">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_2">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_2">다음 페이지</div>
+										</div>
+									</div>
+
+									<div class="ask_quiz quizContent" data-level="hard">
+										<div class="question_txt quizMarking">
+											그림을 보고, 빈칸에 알맞은 낱말을 써서 문장을 완성하세요.
+										</div>
+										<assessmentItem class="quizType" data-qid="Quiz_ASK_2_3" data-question-type="essayQuiz" data-response-type="fillInTheBlank" data-answerBtn="false">
+											<itemBody>
+												<img class="img r_img" src="images/selftest4/02_hard_01.png" alt="보기"/>
+												<div class="quiz_essay quizEssay">
+													<div class="a_c tal">
+														A: Hi, Yunho. Can you
+														<br/><span class="pl30"></span>
+														<div class="input_wrap" style="width: 120px">
+															<input type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">come</correctResponse>
+														</div>
+														<div class="input_wrap" style="width: 120px">
+															<input type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">to</correctResponse>
+														</div>
+														<div class="input_wrap" style="width: 120px">
+															<input type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">my</correctResponse>
+                            </div>
+                            <br/><span class="pl30"></span>
+														<div class="input_wrap" style="width: 240px">
+															<input type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">basketball</correctResponse>
+														</div>
+														<div class="input_wrap" style="width: 120px">
+															<input type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">game</correctResponse>
+														</div>?
+                            <br>B: When is it?
+                            <br>A: It's on
+														<div class="input_wrap" style="width: 170px">
+															<input id="" type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">August</correctResponse>
+														</div>
+														<div class="input_wrap" style="width: 120px">
+															<input id="" type="text" class="essayWrite input_txt noSound" title="입력"/>
+															<correctResponse class="answerCorrect essayAnswer answer_txt">17th</correctResponse>
+                            </div>.
+                            <br>B: Sure, I can.
+													</div>
+												</div>
+											</itemBody>
+										</assessmentItem>
+										<div class="btn_wrap">
+											<div class="fbtn btnCheck disable" title="확인" data-target="Quiz_ASK_2_3">확인</div>
+											<div class="fbtn btnReplay disable" title="다시하기" data-target="Quiz_ASK_2_3">다시하기</div>
+											<div class="fbtn btnNextQuiz disable" title="다음 페이지" data-target="Quiz_ASK_2_3">다음 페이지</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Pop-up Content -->
+			<div class="popWrap">
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+
+	<!-- self Test Animte js -->
+	<script src="../../common/js/animate/createjs.min.js"></script>
+	<script src="../../common/js/animate/canvas-init.js"></script>
+	<script src="../../common/js/animate/selfTest-animte-06.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			animateInit('D84302C88A56314093C81F1F735CCC9C', true); // Self Test Animation Start
+
+		}, false);
+	</script>
+</body>
+
+</html>

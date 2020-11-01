@@ -1,0 +1,110 @@
+.audio_list {
+  text-align: center;
+}
+.audio_list li {
+  display: inline-block;
+  vertical-align: top;
+}
+.audio_list li > div {
+  position: relative;
+}
+.audio_list li > .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.audio_list li .txt {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+}
+.audio_list li > div::after {
+  content: '';
+  display: block;
+  width: 304px;
+  height: 280px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.audio_list li:nth-child(1) div::after {
+  background-image: url(../images/e6_l05_71_01_01_pick_01.png);
+}
+.audio_list li:nth-child(2) div::after {
+  background-image: url(../images/e6_l05_71_01_01_pick_02.png);
+}
+.audio_list li:nth-child(3) div::after {
+  background-image: url(../images/e6_l05_71_01_01_pick_03.png);
+}
+
+.quiz_essay_list {
+  background: url(../images/e6_l05_71_01_01_txt_bg.png) no-repeat center;
+  width: 1144px;
+  height: 299px;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  margin: 0 auto;
+}
+.quiz_essay .icon {
+  vertical-align: top;
+  margin: 3px 5px 0 0;
+}
+.quiz_essay {
+  padding: 22px 0 0 0;
+  line-height: 50px;
+  white-space: nowrap;
+  font-size: 0;
+}
+.quiz_essay + .quiz_essay {
+  margin-top: 15px;
+}
+.quiz_essay .answer {
+  float: right;
+  width: 420px;
+}
+.quiz_essay .btn_each {
+  right: 0;
+  top: 25px;
+}
+.quiz_essay:nth-child(2) .btn_each {
+  right: -20px;
+}
+.quiz_essay:nth-child(3) .btn_each {
+  right: -28px;
+}
+.quiz_essay .input_wrap {
+  vertical-align: top;
+}
+.quiz_essay .input_txt {
+  display:inline-block;
+  vertical-align: top;
+  width:190px;
+  height:50px;
+  background: url('../../../common/images/quiz/input_4line.png') repeat-x;
+  background-size: contain;
+  margin: 0 4px;
+}
+.quiz_essay .txt {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.quiz_essay .answerAudio {
+  position: absolute;
+  left: -60px;
+  top: 24px;
+}
+.quizType.quiz_except .input_wrap .answer_txt {
+  top: 0;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.quizType.quiz_except .input_wrap .answer_txt.overwrite {
+  line-height: 50px;
+}

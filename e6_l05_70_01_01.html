@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<title></title>
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" type="text/css" href="../../common/css/base.css">
+
+	<!-- Chapter data js -->
+	<script src="../../common/js/data.js"></script>
+
+	<!-- Common js -->
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/common.js"></script>
+
+	<!-- Event moduled -->
+	<script src="../../common/js/module-ui/app.js"></script>
+
+	<!-- Media js -->
+	<script src="../../common/js/media/mediaplayer.js"></script>
+	<script src="../../common/js/media/mediaplayer_compo.js"></script>
+	<script src="../../common/js/media/mediaplayer_core.js"></script>
+	<script src="../../common/js/media/mediaplayer_template.js"></script>
+	<script src="../../common/js/media/mediaplayer_hq.js"></script>
+
+	<!-- sync data -->
+	<script src="./js/sync.js"></script>
+
+	<style>
+		.tabContent .tabDetail>li:nth-child(3) {padding-top: 50px;}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Container -->
+		<div id="container">
+			<!-- Header -->
+			<div id="header" data-title="Sing and Read"></div>
+
+			<!-- Content -->
+			<div class="content videoType">
+				<div class="aside_top">
+					<div class="al_wrap">
+						<div class="al_btn btnTab on" data-page="e6_l05_70_01_01.html">노래 부르기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_70_01_02.html">낱말 읽기</div>
+						<div class="al_btn btnTab" data-page="e6_l05_70_01_03.html">노랫말 읽기</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="video_content song">
+						<div class="mp_video" id="syncV_P_1" data-media="" data-compo="volume video btnAnotherChange:_follow@_follow btnChange:_mr btnSubtitle"></div>
+
+						<!-- 자막 -->
+						<div id="subtitle_syncV_P_1" class="videoInnerScript">
+							<div class="caption">
+								<p class="tEng"></p>
+								<p class="tKor"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div id="nav"></div>
+	</div>
+</body>
+
+</html>
